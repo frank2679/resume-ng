@@ -1,0 +1,109 @@
+% !TeX TS-program = xelatex
+
+\documentclass{resume}
+\usepackage[style=ieee]{biblatex}
+
+% Define the bibliography file
+\addbibresource{own-bib.bib} % Replace "your_bibliography" with your actual BibTeX file name
+
+\ResumeName{Hang Yang}
+
+\begin{document}
+
+\ResumeContacts{
+  (+86) 131-6207-0162,%
+  \ResumeUrl{mailto:hangyang1223@gmail.com}{hangyang1223@gmail.com},%
+  % \ResumeUrl{https://blog.fkynjyq.com}{blog.fkynjyq.com} \footnote{Underlined content contains hyperlinks.},%
+  % \ResumeUrl{https://frank2679.github.io}{github.com/frank2679.io}%
+}
+
+
+\ResumeTitle
+
+
+\section{Personal Summary}
+
+\begin{itemize}
+  \item Over five years of experience in developing operator acceleration libraries for heterogeneous platforms (CPU/GPU/DSP/NPU), including DNN, BLAS, FFT, etc. Deep involvement in 0-1 chip software and hardware development.
+  \item Two years of team leadership experience, managing teams of around 10 people.
+  \item Strong software engineering skills (project implementation), excellent learning ability, committed to excellence and quality.
+\end{itemize}
+
+\section{Education}
+\ResumeItem
+[National Taiwan University|Master's Degree]
+{National Taiwan University}
+[\textnormal{Telecom Institute|} Master's Degree]
+[2014.09—2017.01]
+Designed WIFI 802.11ax protocol, published two papers in IEEE Access journal and Globalcom.
+
+\nocite{*} % Include all publications from the BibTeX file
+%% If you just want everything in one list
+\printbibliography[heading={none}]
+
+% \printbibliography[heading={subbibliography},title={Journal Articles},type=article]
+% \printbibliography[heading={subbibliography},title={Conference Proceedings},type=inproceedings]
+
+
+\ResumeItem
+[Chongqing University|Undergraduate]
+{Chongqing University}
+[\textnormal{Communication Engineering|} Bachelor's Degree]
+[2010.09—2014.06]
+
+\textbf{Top 5\%} of the program, outstanding graduate, multiple scholarship recipient.
+
+% \section[Technical Skills]{Technical Skills\protect\footnote{Skills unrelated to the job position are omitted or represented in gray.}}
+\section{Technical Skills}
+
+\begin{itemize}
+  \item \textbf{Technology Stack}: Daily use of C++, Python, CUDA; familiar with software and hardware co-optimization, zebu.
+  \item \textbf{Workflow}: CMake, Linux, Bash, Vim, Git, GitHub, JIRA, Docker, Markdown, Jenkins, English working environment.
+\end{itemize}
+
+\section{Work Experience/6 Years}
+
+\ResumeItem{Biren Technology/2.5 Years}
+[Software Engineer/Team Leader]
+[2021.1—Present]
+
+\begin{itemize}
+  \item Developed AI/HPC acceleration libraries from scratch based on GPGPU platform.
+  \item Led a team of around 10 people.
+\end{itemize}
+
+\ResumeItem{Hikvision/3.5 Years}
+[Software Engineer]
+[2017.7—2020.12] 
+
+\begin{itemize}
+  \item Developed high-performance convolutional neural network (CNN) library for heterogeneous platforms, evaluated chip performance.
+  \item End-to-end responsibility for algorithm-side projects, deeply analyzed business requirements, built efficient application solutions, accelerated intelligent algorithm implementation.
+\end{itemize}
+
+\section{Project Experience}
+
+\ResumeItem{\textbf{BLAS} Library in C++}
+[Development and Maintenance from Scratch]
+[2021.11—Present]
+
+\begin{itemize}
+  \item Lead project initiation, design, system construction, development, testing, CI/CD deployment, documentation, task management through JIRA.
+  \item Implemented operator registration framework, logging system, core operator development.
+  \item Performance optimization of core operators (GEMM/GEMV/reduce).
+\end{itemize}
+
+\ResumeItem{\textbf{DNN} Testing Framework}
+[Custom Operator/Graph Test Cases Based on YAML]
+[2022.3—Present]
+
+\begin{itemize}
+  \item Designed operator/graph test cases based on YAML
+  \item Designed tester based on gtest, supporting tests at various granularities for operators/graphs, multiple backend testing.
+  \item Aligned with industry-leading precision comparison schemes.
+  \item Integrated performance testing tools to automatically generate performance test reports.
+\end{itemize}
+
+
+\end{document}
+
