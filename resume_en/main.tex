@@ -25,9 +25,9 @@
 \section{Personal Summary}
 
 \begin{itemize}
-  \item Over five years of experience in developing AI libraries for heterogeneous platforms (CPU/GPU/DSP/NPU), including DNN, BLAS, FFT, etc. Deep involvement in 0-1 software development.
-  \item Two years of team leadership experience, managing teams of around 10 people.
-  \item Strong software engineering skills (project implementation), excellent learning ability, committed to excellence and quality.
+  \item Over six years of experience in heterogeneous platform (CPU/GPU/DSP/NPU) operator acceleration library, including DNN, BLAS, FFT, RAND. Deeply involved in 0-1 chip software and hardware development.
+  \item Two years of team leadership experience, leading a team of 5 people.
+  \item Strong learning ability, pursuit of excellence, and a passion for triathlons.
 \end{itemize}
 
 \section{Education}
@@ -57,28 +57,28 @@
 \section{Technical Skills}
 
 \begin{itemize}
-  \item \textbf{Technology Stack}: Daily use of C++, Python, CUDA; familiar with software and hardware co-optimization, zebu.
-  \item \textbf{Workflow}: CMake, Linux, Bash, Vim, Git, GitHub, JIRA, Docker, Markdown, Jenkins, English working environment.
+  \item \textbf{Technology Stack}: Familiar with operator optimization, deep learning model deployment optimization, including CNN, large language models.
+  \item \textbf{Tools}: Proficient in C++, Python, CUDA, CMake, Verdi, Vim, Git, JIRA, and working in an English environment.
 \end{itemize}
 
 \section{Work Experience/6 Years}
 
-\ResumeItem{Biren Technology/2.5 Years}
+\ResumeItem{Leading GPU Manufacturer in China/3 Years}
 [Software Engineer/Team Leader]
 [2021.1—Present]
 
 \begin{itemize}
   \item Developed AI/HPC acceleration libraries from scratch based on GPGPU platform.
-  \item Led a team of around 10 people.
+  \item Led and managed a team of around 10 people, providing guidance and direction for project development.
 \end{itemize}
 
-\ResumeItem{Hikvision/3.5 Years}
+\ResumeItem{Leading company of video surveillance products/3.5 Years}
 [Software Engineer]
 [2017.7—2020.12] 
 
 \begin{itemize}
-  \item Developed high-performance convolutional neural network (CNN) library for heterogeneous platforms, evaluated chip performance.
-  \item End-to-end responsibility for algorithm-side projects, deeply analyzed business requirements, built efficient application solutions, accelerated intelligent algorithm implementation.
+  \item Developed high-performance convolutional neural network (CNN) library for heterogeneous platforms, with a focus on evaluating chip performance.
+  \item Held end-to-end responsibility for algorithm-side projects, deeply analyzing business requirements, and building efficient application solutions to accelerate intelligent algorithm implementation.
 \end{itemize}
 
 \section{Project Experience}
@@ -88,20 +88,30 @@
 [2021.11—Present]
 
 \begin{itemize}
-  \item Lead project initiation, design, system construction, development, testing, CI/CD deployment, documentation, task management through JIRA.
-  \item Implemented operator registration framework, logging system, core operator development.
-  \item Performance optimization of core operators (GEMM/GEMV/reduce).
+  \item Led the project, responsible for design, construction, development, testing, CICD, documentation, and management.
+  \item Optimized the performance of various large language model GEMM scenarios, benchmarked against A100. 
+  \item Designed and implemented kernel selection algorithms.
+  \item Implemented operator registration framework, logging system, and core operator development.
 \end{itemize}
 
-\ResumeItem{\textbf{DNN} Testing Framework}
-[Custom Operator/Graph Test Cases Based on YAML]
+\ResumeItem{Ultimate Optimization of GEMM}
+[based on verdi/zebu]
+[2022.9—2022.11]
+
+\begin{itemize}
+  \item Handwritten assembly to achieve ultimate performance GEMM on Vcore, achieved full utilization for specific shapes by observing waveforms through Verdi.
+  \item Implemented simulated FP32 GEMM algorithm based on Tcore, achieved full utilization for specific shapes, and outperformed A100 in performance.
+\end{itemize}
+
+\ResumeItem{DNN Framework Development}
+[Self-defined yaml to serialize operator and graph]
 [2022.3—Present]
 
 \begin{itemize}
-  \item Designed operator/graph test cases based on YAML
-  \item Designed tester based on gtest, supporting tests at various granularities for operators/graphs, multiple backend testing.
-  \item Aligned with industry-leading precision comparison schemes.
-  \item Integrated performance testing tools to automatically generate performance test reports.
+  \item Developed a deep learning framework based on Caffe.
+  \item Self-defined operator/graph expression based on YAML referencing ONNX.
+  \item Compared precision with mainstream industry solutions and designed custom precision comparison solutions.
+  \item Deployed precision verification, and performance dashboard.
 \end{itemize}
 
 

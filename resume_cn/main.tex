@@ -6,7 +6,7 @@
 % Define the bibliography file
 \addbibresource{own-bib.bib} % Replace "your_bibliography" with your actual BibTeX file name
 
-\ResumeName{杨清}
+\ResumeName{黄杨}
 
 \begin{document}
 
@@ -14,7 +14,8 @@
   % (+86) 131-6207-0162,%
   \ResumeUrl{mailto:2679frank@gmail.com}{2679frank@gmail.com},%
   % \ResumeUrl{https://blog.fkynjyq.com}{blog.fkynjyq.com} \footnote{下划线内容包含超链接。},%
-  \ResumeUrl{https://frank2679.github.io}{github.com/frank2679.io}%
+  \ResumeUrl{https://frank2679.github.io}{github.com/frank2679.io},%
+  \ResumeUrl{https://www.linkedin.com/in/frank-young-7b5631288/}{Linkedin/FrankYoung}
 }
 
 
@@ -24,9 +25,9 @@
 \section{个人总结}
 
 \begin{itemize}
-  \item 有五年以上异构平台(CPU/GPU/DSP/NPU)算子加速库经验，包括 DNN, BLAS, FFT 等。深度参与0-1芯片软硬件研发；
-  \item 有两年带团队经验，团队规模10人左右；
-  \item 有较强的软件工程能力（项目落地），很强的学习力，坚持精益求精，做精品。
+  \item 有六年以上异构平台(CPU/GPU/DSP/NPU)算子加速库经验，包括 DNN, BLAS, FFT 等。深度参与0-1芯片软硬件研发；
+  \item 有两年带团队经验，团队规模5人；
+  \item 超强的学习能力，追求卓越，铁三爱好者。
 \end{itemize}
 
 \section{教育经历/硕士研究生}
@@ -57,19 +58,19 @@ WIFI 802.11ax 协议设计，分别在 IEEE access 期刊，及通信领域顶�
 \section{技术能力}
 
 \begin{itemize}
-  \item \textbf{技术栈}: 日常使用 C++, Python, cuda, 熟悉软硬件协同优化，zebu;
-  \item \textbf{工作流}: cmake, Linux, bash, Vim, Git, GitHub, JIRA, docker, markdown, jenkins, 英文工作环境.
+  \item \textbf{技术内容}: 熟悉算子优化，深度学习模型部署优化，包括 CNN, 大语言模型;
+  \item \textbf{技术栈}: 熟悉 C++, Python, cuda, cmake, verdi, vim, git, JIRA, 英文工作环境.
 \end{itemize}
 
 \section{工作经历/6年}
 
-\ResumeItem{国内头部GPU厂商/2年半}
+\ResumeItem{国内头部GPU厂商/3年}
 [软件工程师/team leader/算子加速库]
 [2021.1 至今]
 
 \begin{itemize}
-  \item 基于 GPGPU 平台从零开发 AI/HPC 领域加速库
-  \item 带领10人左右团队
+  \item 基于 GPGPU 平台从零开发 AI/HPC 领域加速库（DNN, BLAS, RAND, FFT）
+  \item 带领5人团队
 \end{itemize}
 
 \ResumeItem{安防领域龙头企业/3年半}
@@ -83,38 +84,34 @@ WIFI 802.11ax 协议设计，分别在 IEEE access 期刊，及通信领域顶�
 
 \section{项目经历}
 
-\ResumeItem{基于 C++ 开发 \textbf{BLAS} 加速库}
+\ResumeItem{\textbf{BLAS} 加速库}
 [0-1开发维护]
 [2021.11-至今]
 \begin{itemize}
-  \item lead 项目立项，设计，系统构建，开发，测试，部署 CICD，文档，通过 JIRA 进行任务管理；
-  \item 实现了算子注册框架，日志系统，核心算子开发；
-  \item 核心算子(GEMM/GEMV/reduce)性能优化；
-  \item 对软件产品的 SDLC 有了一定理解。
+  \item lead 项目，负责设计，构建，开发，测试，CICD，文档，管理；
+  \item GEMM 优化，优化多种大模型场景，性能对标 A100。
+  \item kernel selection 算法设计与实现；
+  \item 实现了算子注册框架，日志系统，核心算子开发，
 \end{itemize}
-
-
-\ResumeItem{设计 DSL 开发 \textbf{DNN} 测试框架}
-[基于 yaml 自定义算子用例表达]
-[2022.3—2023.6]
-
-\begin{itemize}
-  \item 设计基于 yaml 的算子/图用例表达，使得用例表达更加可读，易于管理；
-  \item 基于 gtest 设计 tester，支持算子/图多种粒度的测试，支持多个 backend 测试，支持离线数据加载等；
-  \item 对标业界主流精度对比方案，支持多种 data type, op type, 特定硬件实现等弹性精度设置；
-  \item 集成性能测试工具，自动生成性能测试报告；
-  \item 部署 CICD，自动化守护 DNN 精度/性能；
-\end{itemize}
-
 
 \ResumeItem{\textbf{GEMM} 极致优化实现}
-[基于 zebu 极致优化]
+[基于 zebu/verdi 极致优化]
 [2021.9—2021.10]
 
 \begin{itemize}
-  \item 手写汇编在 vcore 上实现极致性能 GEMM，做到特定 shape 下利用率打满。
-  \item 使用 zebu 查看 waveform，优化到 cycle 级别。
+  \item 手写汇编在 vcore 上实现极致性能 GEMM，通过 verdi 看波形，做到特定 shape 下利用率打满。
   \item 基于 tcore 实现模拟 fp32 GEMM 算法，也做到特定 shape 下利用率打满，性能超过A100。
+\end{itemize}
+
+\ResumeItem{开发 \textbf{DNN} 框架}
+[基于 yaml 自定义算子表达]
+[2022.3—2023.6]
+
+\begin{itemize}
+  \item 参考 caffe 开发深度学习框架；
+  \item 参考 onnx 设计基于 yaml 定义算子/图表达；
+  \item 对标业界主流精度对比方案，自定义精度比对方案；
+  \item 自动化部署精度验证，benchmark dashboard；
 \end{itemize}
 
 
