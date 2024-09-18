@@ -11,10 +11,10 @@
 \begin{document}
 
 \ResumeContacts{
-  (+86) 151-6143-5537,%
+  (+86) 131-6207-0162,%
   \ResumeUrl{mailto:2679frank@gmail.com}{2679frank@gmail.com},%
   % \ResumeUrl{https://blog.fkynjyq.com}{blog.fkynjyq.com} \footnote{下划线内容包含超链接。},%
-  \ResumeUrl{https://frank2679.github.io}{github.com/frank2679.io},%
+%   \ResumeUrl{https://frank2679.github.io}{github.com/frank2679.io},%
 }
 
 
@@ -22,17 +22,17 @@
 
 \section{个人总结}
 \begin{itemize}
-    \item 拥有7年异构平台（CPU/GPU/DSP/NPU）算子加速库开发经验，专注 DNN、BLAS 等核心加速库的开发。
-    \item 具有三年团队管理经验，成功带领团队完成交付，得到客户认可，也曾跨团队主导项目开发。
+    \item 拥有7年异构平台（CPU/GPU/DSP/NPU）算子加速库开发经验，专注 BLAS，DNN 等核心加速库的开发。
+    \item 具有三年团队管理经验，成功带领团队完成交付，得到客户认可，也曾跨团队领导项目开发。
     \item 拥有超强的学习能力，追求卓越，喜欢钻研技术，乐于分享。
 \end{itemize}
 
 % \section[技术能力]{技术能力\protect\footnote{与求职岗位无关的技能省略或用灰色表示。}}
 \section{技术能力}
 \begin{itemize}
-    \item \textbf{技术方向}: 加速库开发、算子优化、深度学习模型部署优化（LLM，CNN），熟悉 pytorch，cutlass。
+    \item \textbf{技术方向}: 加速库开发、算子优化、深度学习模型部署优化（LLM，CNN），熟悉 pytorch。
     \item \textbf{编程语言}: C++/C、Python、CUDA。
-    \item \textbf{开发工具}: CMake、Verdi、Vim、Git、JIRA、Jenkins、markdown。
+    \item \textbf{开发工具}: CMake、vscode（cursor）、Verdi、Vim、Git、JIRA、Jenkins、markdown。
 \end{itemize}
 
 
@@ -57,9 +57,11 @@
 
 \section{项目经历}
 
-\ResumeItem{BLAS 支持 llama2 系列} [llama2 性能打平 A100 | 专利 2 项]
-[2023.12 - 2024.03]
+\ResumeItem{BLAS 产品化} [性能对标 A100 | 专利 3 项]
+[2023.6 - 至今]
 \begin{itemize}
+    \item 从无到有搭建框架，测试，算子开发，算子选择，benchmark，CICD，文档
+    \item 泛化支持 LLM (qwen, llama2, gpt)系列模型，在第一代多款芯片上性能打平 A100
     \item 通过 trace 分析llama2系列模型不同并行策略下 BLAS 所需要优化的各种场景。
     \item 使能了多种优化策略，包括 warp-specialized 编程范式, fused bias, fused grad 累加，BF16 累加等。
 \end{itemize}
@@ -70,10 +72,10 @@
     \item 在特定shape下，通过手写汇编和Verdi波形分析，实现了基于vcore和tcore平台的GEMM算法性能最优化。
 \end{itemize}
 
-\ResumeItem{DNN框架开发}[支撑DNN 全栈验证|软著 1项，软著1项]
+\ResumeItem{DNN框架开发}[支撑DNN 全栈验证|软著 1项]
 [2022.03 - 2023.06]
 \begin{itemize}
-    \item 参考pytorch开发深度学习框架，并设计基于YAML的算子表达方式，实现了自动化精度验证和性能对标。
+    \item 参考pytorch开发深度学习框架及精度验证，并设计基于YAML的算子表达方式，实现了自动化精度验证和性能对标。
 \end{itemize}
 
 \section{教育经历/硕士研究生}
