@@ -23,9 +23,9 @@
 
 \section{个人总结}
 \begin{itemize}
-    \item 拥有8年异构平台（CPU/GPU/DSP/NPU）算子加速库开发经验，专注 BLAS，DNN 等核心加速库的开发。
+    \item 拥有 9 年异构平台（CPU/GPU/DSP/NPU）算子加速库开发经验，专注 BLAS，DNN 等核心加速库的开发。
     \item 具有 5 年技术团队管理经验，成功带领团队完成核心项目交付，得到客户认可，也曾跨团队领导项目开发。
-    \item 拥有超强的学习能力，追求卓越，喜欢钻研技术，乐于分享。
+    \item 工作内容多为 0 到 1 从零搭建，涵盖技术选型、AI + Git 研发流程搭建、质量保障体系。
 \end{itemize}
 
 % \section[技术能力]{技术能力\protect\footnote{与求职岗位无关的技能省略或用灰色表示。}}
@@ -40,11 +40,11 @@
 \section{工作经历}
 
 
-\ResumeItem{阿里达摩院} 
+\ResumeItem{阿里达摩院}
 [软件工程师 | 算子加速库]
 [2024.12 至今]
 \begin{itemize}
-    \item 负责 gemm 类算子开发，软硬件协同分析。
+    \item 负责算子模板库开发，面向 AI harness 和人工算子专家，CUTLASS v3.x 编程范式，支持 AI codegen 和头文件调用生成高性能算子。
 \end{itemize}
 
 \ResumeItem{壁仞科技}
@@ -66,10 +66,11 @@
 
 \section{项目经历}
 
-\ResumeItem{CUTLASS 移植} [掌握 CUTLASS 编程范式]
+\ResumeItem{算子模板库（KTL）开发} [面向 AI Harness 的 CUTLASS 风格算子模板库]
 [2025.07 - 至今]
 \begin{itemize}
-    \item 预研分析 CUTLASS 框架，cute layout 算术，并支持新的芯片架构，初步实现泛化的 gemm 算子。
+    \item 2025.07 - 2025.09：预研分析 CUTLASS 框架与 cute layout 算术，将泛化的 GEMM 算子移植至新的芯片架构。
+    \item 2026.06 - 至今：转向面向 AI harness 的算子模板库（KTL）开发，参考 CUTLASS v3.x 编程范式，覆盖 elementwise、reduce、gemm、conv、normalize、activation 及 attention、moe 等 fusion 算子，支持 AI codegen 与头文件调用。
 \end{itemize}
 
 \ResumeItem{BLAS 产品化} [性能对标 A100 | 专利 3 项]
