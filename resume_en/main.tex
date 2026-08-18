@@ -13,9 +13,9 @@
 \ResumeContacts{
   (+86) 131-6207-0162,%
   \ResumeUrl{mailto:2679frank@gmail.com}{2679frank@gmail.com},%
-  % \ResumeUrl{https://blog.fkynjyq.com}{blog.fkynjyq.com} \footnote{Underlined content contains hyperlinks.},%
-  % \ResumeUrl{https://frank2679.github.io}{github.com/frank2679.io},%
-  % \ResumeUrl{https://www.linkedin.com/in/frank-young-7b5631288/}{Linkedin/FrankYoung}
+  \ResumeUrl{https://frank2679.github.io}{frank2679.github.io},%
+  \ResumeUrl{https://github.com/frank2679}{github.com/frank2679},%
+  \ResumeUrl{https://www.linkedin.com/in/frank-young-7b5631288/}{linkedin.com/in/frank-young}
 }
 
 
@@ -25,9 +25,9 @@
 \section{Personal Summary}
 
 \begin{itemize}
-  \item Over 8 years of experience in heterogeneous platform (CPU/GPU/DSP/NPU) operator acceleration library, including DNN, BLAS, FFT, RAND. Deeply involved in 0-1 AI software stack development.
-  \item Three years of team (~5 people) leadership experience.
-  \item Strong learning ability, pursuit of excellence, and a passion for technology.
+  \item Over 9 years of experience in heterogeneous platform (CPU/GPU/DSP/NPU) operator acceleration library, including DNN, BLAS, FFT, RAND. Deeply involved in 0-1 AI software stack development.
+  \item 5 years of technical leadership experience, leading an engineering team at Biren Technology.
+  \item Most projects delivered 0-to-1: technology selection, framework build-out, core operator development, building AI-assisted and Git-based development workflows, and CI/CD.
 \end{itemize}
 
 \section{Education}
@@ -60,7 +60,8 @@
 [2024.12-Present]
 
 \begin{itemize}
-  \item Developed gemm-like operators
+  \item Core GEMM operator development with DV-based hardware/software co-analysis, covering GEMM tile size, SRAM sizing, and swizzle mechanisms.
+  \item Developing an operator template library for the AI harness and expert kernel engineers, using CUTLASS v3.x programming patterns to support AI codegen and header-only invocation for generating high-performance operators (see Project Experience).
 \end{itemize}
 
 \ResumeItem{Biren Tech}
@@ -68,25 +69,27 @@
 [2021.01—2024.11]
 
 \begin{itemize}
-  \item Developed BLAS acceleration libraries from scratch based on GPGPU platform.
+  \item Built a BLAS acceleration library from scratch on a proprietary GPGPU platform, reaching A100-level throughput on first-generation chips (see Project Experience).
+  \item Led the engineering team as Team Lead; owned technical roadmap and delivery.
 \end{itemize}
 
 \ResumeItem{Hikvision}
 [Software Engineer]
-[2017.07—2020.12] 
+[2017.07—2020.12]
 
 \begin{itemize}
-  \item Developed high-performance convolutional neural network (CNN) library.
+  \item Developed high-performance convolutional neural network (CNN) library for heterogeneous AI inference platforms, optimizing convolution and matrix operations on CPU/DSP/NPU.
 \end{itemize}
 
 \section{Project Experience}
 
-\ResumeItem{CUTLASS Porting to New Chip}
-[Programming pattern]
+\ResumeItem{Operator Template Library (KTL) Development}
+[CUTLASS-style Kernel Template Library for AI Harness]
 [2025.07—Present]
 
 \begin{itemize}
-  \item Studied the CUTLASS framework, cute layout algebra, then port to new chip.
+  \item 2025.07 -- 2025.09: Studied the CUTLASS framework and CuTe layout algebra in depth; ported a generalized GEMM implementation to a new chip.
+  \item 2026.06 -- Present: Pivoted to building a CUTLASS v3.x-style kernel template library (KTL) for the AI harness, covering elementwise, reduce, GEMM, conv, normalization, and activation operators, plus fusion operators such as attention and MoE; supports AI codegen and header-only invocation for generating high-performance operators.
 \end{itemize}
 
 
@@ -96,9 +99,10 @@
 
 \begin{itemize}
   \item Led the project, responsible for design, construction, development, testing, CICD, documentation, and management.
-  \item Optimized the performance of various large language model GEMM scenarios, benchmarked against A100. 
+  \item Optimized performance across major LLM workloads (Qwen, Llama2, GPT series), reaching A100-level throughput on first-generation chips.
   \item Designed and implemented kernel selection algorithms.
-  \item Implemented operator registration framework, logging system, and core operator development.
+  \item Implemented advanced optimization strategies: warp-specialized programming, fused bias/gradient accumulation, and BF16 accumulation.
+  \item Implemented operator registration framework, logging system, and core operator development; filed 3 patents in AI acceleration.
 \end{itemize}
 
 \ResumeItem{Ultimate Optimization of GEMM}
@@ -107,7 +111,7 @@
 
 \begin{itemize}
   \item Handwritten assembly to achieve ultimate performance GEMM on Vcore, achieved full utilization for specific shapes by observing waveforms through Verdi.
-  \item Implemented simulated FP32 GEMM algorithm based on Tcore, achieved full utilization for specific shapes, and outperformed A100 in performance.
+  \item Implemented simulated FP32 GEMM algorithm based on Tcore, achieved full utilization for specific shapes, and outperformed A100 in performance; filed 2 patents from this work.
 \end{itemize}
 
 \ResumeItem{DNN Framework Development}
@@ -117,7 +121,7 @@
 \begin{itemize}
   \item Developed a deep learning framework.
   \item Self-defined operator/graph expression based on YAML referencing ONNX.
-  \item Compared precision with mainstream industry solutions and designed custom precision comparison solutions.
+  \item Compared precision with mainstream industry solutions and designed custom precision comparison solutions; registered a software copyright for the framework.
 \end{itemize}
 
 % \section[Technical Skills]{Technical Skills\protect\footnote{Skills unrelated to the job position are omitted or represented in gray.}}
@@ -125,8 +129,8 @@
 
 \begin{itemize}
   \item \textbf{Technology Stack}: Performance optimization, Acceleration library dev, Deep learning model deployment(CNN, LLM).
-  \item \textbf{Languages \& Tools}: AI coding copilot, C++, Python, CUDA, CMake, Verdi/SimVision, Git, JIRA, Jenkins.
-  \item \textbf{Habits}: Triathon for 5 years.
+  \item \textbf{Languages \& Tools}: AI coding copilot (Claude Code, etc. — building and distributing MCP servers, Skills, and Agents), C++, Python, CUDA, Assembly, CMake, Verdi/SimVision, Git, JIRA, Jenkins.
+  \item \textbf{IP}: 5 AI-domain patents, 1 communications patent, 1 software copyright.
 \end{itemize}
 
 
